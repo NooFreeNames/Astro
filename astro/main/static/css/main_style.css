@@ -1,0 +1,39 @@
+:root {
+    --content-background-color: #c4cad4;
+    --side-bar-background-color: #a3a9b4;
+    --container-background-color: white;
+    --control-color: #596880;
+    --control-hover-color: #384352;
+    --control-active-color: #1f2633;
+    --control-disabled-color: #9ba1ab;
+    --foreground-color: block;
+    --foreground-negative-color: white;
+    --containers-gap: 10px;
+    
+}
+
+body {
+    display: grid;
+    grid-template-areas: 'side-bar content';
+    grid-template-columns: 50px 1fr;
+    margin: 0;
+    height: 100vh;
+    font-size: 17px;
+    font-family: Calibri, sans-serif;
+}
+
+
+
+.content {
+    grid-area: content;
+    background-color: var(--content-background-color);
+}
+
+.side-bar {
+    grid-area: side-bar;
+    background-color: var(--side-bar-background-color);
+}
+
+
+
+

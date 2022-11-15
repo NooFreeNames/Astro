@@ -1,0 +1,78 @@
+.home-page {
+    box-sizing: border-box;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "name search-panel"
+                         "property-list object-list"
+                         "editing-panel pagination-panel";
+    gap: var(--containers-gap);
+    padding: var(--containers-gap);
+    grid-template-rows: auto 1fr min-content ;
+    grid-template-columns: 1fr 1fr;
+}
+
+.name {
+    grid-area: name;
+    font-size: 27px;
+
+}
+
+.property-list {
+    grid-area: property-list;
+}
+
+.editing-panel {
+    grid-area: editing-panel;
+    display: flex;
+    justify-content: space-between;
+}
+
+.editing-panel .button {
+    padding: 0 40px;
+}
+
+.editing-panel .button.add {
+    margin-right: 10px;
+}
+
+.editing-panel .add-and-edit {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.search-panel {
+    grid-area: search-panel;
+    display: flex;
+}
+
+.search-panel .button {
+    flex-grow: 0;
+}
+
+.search-panel .text-box {
+    flex-grow: 1;
+}
+
+.object-list {
+    grid-area: object-list;
+}
+
+.pagination-panel {
+    grid-area: pagination-panel;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.pagination-panel .pagination  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+
+.pagination-panel .button,  .pagination-panel .text-box{
+    box-sizing: border-box;
+    width: 40px;
+}

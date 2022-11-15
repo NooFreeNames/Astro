@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="home-page">
+    <div class="container name">
+        <p class="control text-block">Name</p>
+    </div>
+    <div class="container property-list"></div>
+    <div class="container editing-panel">
+        <div class="add-and-edit">
+            <input class="control button add" type="button" value="Add">
+            <input class="control button" type="button" value="Edit">
+        </div>
+        <input class="control button" type="button" value="Remove">
+    </div>
+    <div class="container search-panel">
+        <input class="control text-box" type="text" name="" id="">
+        <input class="control button" type="button" value="Фильтры">
+    </div>
+    <div class="container object-list"></div>
+    <div class="container pagination-panel">
+        <input class="control text-box" type="text">
+        <div class="pagination">
+            <input class="control button" type="button" value="&lt;&lt;">
+            <input class="control button" type="button" value="&lt;">
+            <input class="control button" type="button" value=">">
+            <input class="control button" type="button" value=">>">
+        </div>
+    </div>
+</div>
+{% endblock content %}
